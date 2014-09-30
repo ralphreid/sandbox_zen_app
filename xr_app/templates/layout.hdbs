@@ -4,7 +4,9 @@
 </header>
 <section data-main/>
 <footer>
-  <a href="mailto:{{author.email}}">
-    {{author.name}}
-  </a>
+  <div id="bug_link"
+    <a href="mailto:{{author.email}}">
+      Report bugs
+    </a>
+  </div>
 </footer>
