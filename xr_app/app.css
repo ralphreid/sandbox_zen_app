@@ -2,3 +2,9 @@
   font-size: 80%;
   padding-top: 10px;
 }
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  color: #363;
+}
