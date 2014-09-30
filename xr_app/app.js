@@ -6,10 +6,11 @@
     },
 
     requests: {
-      relatedInfoSettings: function(id){
+
+      requestInfoSettings: function(id) {
         return {
-          url: '/api/v2/users/' + id + '/related.json',
-          type: 'GET',
+          url:'/api/v2/users/' + id + '/related.json',
+          type:'GET',
           dataType: 'json'
         };
       }
@@ -18,11 +19,18 @@
 
     getInfo: function() {
       var id = this.ticket().requester().id();
-      var request = this.ajax('relatedInfoSettings', id);
+      console.log(id);
+      var request = this.ajax('requestInfoSettings', id);
+      request.done(this.showInfo);
+      request.fail(this.showError);
     },
 
     showInfo: function() {
       this.switchTo('requester');
+    },
+
+    showError: function() {
+      this.switchTo('error');
     }
   };
 
