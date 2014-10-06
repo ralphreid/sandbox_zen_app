@@ -25,7 +25,7 @@
       request.fail(this.showError);
     },
 
-    showInfo: function() {
+    showInfo: function(data) {
       this.switchTo('requester', data);
     },
 
