@@ -1,26 +1,26 @@
 <table width="50%">
 <tr>
   <td>Submitted tickets:</td>
-  <td class="total">9</td>
+  <td class="total">{{user_related.requested_tickets}}</td>
 </tr>
 <tr>
   <td>Ticket CC's:</td>
-  <td class="total">3</td>
+  <td class="total">{{user_related.ccd_tickets}}</td>
 </tr>
 <tr>
   <td>Contributed articles:</td>
-  <td class="total">1</td>
+  <td class="total">{{user_related.topics}}</td>
 </tr>
 <tr>
   <td>Article comments:</td>
-  <td class="total">8</td>
+  <td class="total">{{user_related.topic_comments}}</td>
 </tr>
 <tr>
   <td>Content votes:</td>
-  <td class="total">11</td>
+  <td class="total">{{user_related.votes}}</td>
 </tr>
 <tr>
   <td>Content subscriptions:</td>
-  <td class="total">7</td>
+  <td class="total">{{user_related.subscriptions}}</td>
 </tr>
 </table>

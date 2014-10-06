@@ -26,7 +26,7 @@
     },
 
     showInfo: function() {
-      this.switchTo('requester');
+      this.switchTo('requester', data);
     },
 
     showError: function() {
